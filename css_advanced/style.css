@@ -240,3 +240,86 @@ a {
        font-size: 1rem;
    }
 }
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Membership Section Styles */
+.membership-section {
+    background-color: #071629;
+    color: #ffffff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+.section-title .highlight {
+    font-weight: 700;
+    color: #C271FF;
+}
+
+/* Grid for the features */
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+/* Individual Feature Item Styles */
+.feature-item {
+    max-width: 200px;
+}
+
+.feature-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Call-to-Action Button Styles */
+.cta-button {
+    background-color: #C271FF;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b35ae0;
+    transform: translateY(-2px);
+}
