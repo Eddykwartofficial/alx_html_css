@@ -176,6 +176,85 @@ nav ul li a:hover {
     margin: 0;
 }
 
+
+.quote-section { 
+    background-color: #a052e0; 
+    padding: 80px 50px; 
+    display: flex; 
+    align-items: center; 
+    gap: 40px; 
+    color: #ffffff; 
+    font-family: 'Inter', sans-serif; 
+    box-sizing: border-box; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    text-align: left; 
+}
+
+/* Styling for the image container within the quote section */
+.quote-section .image-container { 
+    flex-shrink: 0; 
+}
+
+.quote-section img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Styling for the text content container within the quote section */
+.quote-section .text-content { 
+    flex-grow: 1; 
+    max-width: 700px; 
+}
+
+.quote-section blockquote {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 0 20px 0; 
+    line-height: 1.6;
+    quotes: "« " " »"; 
+}
+
+.quote-section blockquote::before {
+    content: open-quote;
+}
+
+.quote-section blockquote::after {
+    content: close-quote;
+}
+
+.quote-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0; 
+    margin-bottom: 5px; 
+}
+
+.quote-section p {
+    font-size: 16px;
+    opacity: 0.8; 
+    margin: 0; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quote-section {
+        flex-direction: column; 
+        text-align: center; 
+        padding: 40px 20px; 
+    }
+    .quote-section .image-container {
+        margin-bottom: 30px; 
+    }
+    .quote-section .text-content {
+        max-width: 100%; 
+    }
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     header {
