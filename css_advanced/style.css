@@ -1,1 +1,157 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1222; /* Dark background from the image */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Header Styling */
+header {
+    background-color: transparent; /* Assuming a transparent header over the hero image */
+    padding: 20px 50px; /* Padding for the header content */
+    display: flex;
+    justify-content: space-between; /* Spacing between logo/title and navigation */
+    align-items: center;
+    position: absolute; /* Position over the hero section */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    z-index: 1000; /* Ensure header is on top */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust as needed for the SmileSchool logo */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header .logo span {
+    margin-right: 10px; /* Space between smiley icon and "SmileSchool" text */
+    font-size: 1.5em; /* Larger smiley icon */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9c27b0; /* Example hover color (purple) */
+}
+
+/* First Section (Hero Section) Styling */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Adjust height as needed to fit the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing parts of the image */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('alx project image.jpg'); /* Your provided image file */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.7); /* Darken the background image slightly */
+    z-index: -1; /* Place behind content */
+}
+
+.hero-content h1 {
+    font-size: 60px; /* "Get schooled" */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content .subtitle-words {
+    display: flex;
+    gap: 25px; /* Space between "SMILES GRIN LAUGH" */
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.hero-content .register-button {
+    background-color: #9c27b0; /* Purple button color */
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .register-button:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
+}
+
+.learn-pros-text {
+    font-size: 28px;
+    font-weight: 600;
+    color: #9c27b0; /* Purple color */
+    margin-top: 50px; /* Space between button and this text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-content .subtitle-words {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .learn-pros-text {
+        font-size: 22px;
+    }
+}
 
