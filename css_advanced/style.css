@@ -323,3 +323,95 @@ body {
     background-color: #b35ae0;
     transform: translateY(-2px);
 }
+
+.faq-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 4rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #333333;
+            margin-bottom: 3rem;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .faq-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .faq-item {
+            background-color: #ffffff;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .faq-answer {
+            font-size: 0.95rem;
+            color: #666666;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .faq-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .faq-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .faq-column {
+                gap: 2rem;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+            }
+
+            .faq-answer {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .faq-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .faq-title {
+                font-size: 1.8rem;
+            }
+
+            .faq-column {
+                gap: 1.5rem;
+            }
+        }
