@@ -178,3 +178,65 @@ a {
         top: -79px;
     }
 }
+
+.quote-section {
+   background-color: #A350F1;
+   padding: 4rem 2rem;
+   text-align: center;
+}
+
+.quote-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.quote-container img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.quote-text {
+   text-align: left;
+   color: #ffffff;
+}
+
+.quote {
+   font-size: 1.2rem;
+   line-height: 1.6;
+   margin-bottom: 1rem;
+}
+
+.author-name {
+   font-weight: bold;
+   margin-bottom: 0.3rem;
+}
+
+.author-title {
+   font-size: 0.9rem;
+   font-style: italic;
+   color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+   .quote-container {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       gap: 1.5rem;
+   }
+
+   .quote-text {
+       text-align: center;
+   }
+
+   .quote {
+       font-size: 1rem;
+   }
+}
