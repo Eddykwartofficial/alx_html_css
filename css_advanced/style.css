@@ -50,7 +50,7 @@ a {
 /* Hero Section Styles */
 .hero-section {
     /* Replace with your background image */
-    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url('https://storage.googleapis.com/bitten-images/smile-bg.jpg');
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url('Picture1.png');
     background-size: cover;
     background-position: center;
     padding: 15rem 0 5rem 0;
