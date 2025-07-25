@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     color: #ffffff;
-    background-image: url(ROBO.jpg); /* Fallback background */
+    background-color: #071629; /* Fallback background */
 }
 
 a {
