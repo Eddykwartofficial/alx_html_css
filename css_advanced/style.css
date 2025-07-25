@@ -1,154 +1,164 @@
 /* General Body Styles */
 body {
-    font-family: sans-serif; 
+    font-family: 'Inter', sans-serif; /* Assuming Inter font for overall text, as it's common for clean designs */
     margin: 0;
     padding: 0;
-    background-color: #0d1222;
+    background-color: #0d1222; /* Dark background color sampled directly from the image */
     color: #ffffff; /* White text for contrast */
 }
 
-/* Header Styling */
+/* Header Styling - Aligns with the transparent, top-positioned header in the image */
 header {
-    background-color: transparent; 
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute; 
+    background-color: transparent; /* Header is transparent over the hero image */
+    padding: 20px 50px; /* Padding inside the header */
+    display: flex; /* Use flexbox for horizontal alignment of logo and navigation */
+    justify-content: space-between; /* Pushes logo to left, navigation to right */
+    align-items: center; /* Vertically centers items in the header */
+    position: absolute; /* Positions the header absolutely on top of the hero section */
     top: 0;
     left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
+    width: 100%; /* Ensures header spans full width */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    z-index: 1000; /* Ensures the header stays on top of other content */
 }
 
 header .logo {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
+    display: flex; /* Makes the logo container a flex item */
+    align-items: center; /* Vertically aligns smiley and text */
+    font-size: 24px; /* Font size for "SmileSchool" text */
     font-weight: bold;
     color: #ffffff;
 }
 
 header .logo span {
-    margin-right: 10px;
-    font-size: 1.5em;
+    margin-right: 10px; /* Space between smiley icon and "SmileSchool" text */
+    font-size: 1.5em; /* Larger size for the smiley icon */
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Removes bullet points from the navigation list */
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex; /* Makes navigation links horizontal */
 }
 
 nav ul li {
-    margin-left: 30px;
+    margin-left: 30px; /* Space between individual navigation items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+    text-decoration: none; /* Removes underline from links */
+    color: #ffffff; /* White color for navigation links */
+    font-weight: 500; /* Medium font weight */
     font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Hero Section Styling (First Section) */
+nav ul li a:hover {
+    color: #9c27b0; /* Example hover color (purple), matches button accent */
+}
+
+/* Hero Section Styling (The large top section with "Get schooled" and the background image) */
 .hero-section {
-    position: relative;
+    position: relative; /* Needed for positioning the ::before pseudo-element */
     width: 100%;
-    min-height: 700px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    padding: 100px 20px 0; 
-    box-sizing: border-box;
+    min-height: 700px; /* Adjust height to encompass all content visible in the image, including "Learn from the pros" */
+    display: flex; /* Use flexbox to center content vertically and horizontally */
+    flex-direction: column; /* Stacks content (hero-content, learn-pros-text) vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text within its containers */
+    overflow: hidden; /* Hides any overflowing content, especially for the background image */
+    padding: 100px 20px 0; /* Add top padding to move content down from the fixed header */
+    box-sizing: border-box; /* Includes padding in total width/height */
 }
 
 .hero-section::before {
     content: "";
-    position: absolute;
+    position: absolute; /* Positions the pseudo-element relative to .hero-section */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('ROBO1.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(0.7); 
-    z-index: -1;
+    background-image: url('alx project image.jpg'); /* The main background image from your upload */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    filter: brightness(0.7); /* Darkens the background image slightly for better text readability */
+    z-index: -1; /* Puts the background image behind the text content */
 }
 
 .hero-content {
-    margin-top: 50px; 
+    margin-top: 50px; /* Provides space from the top, pushing content below the header */
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 60px; /* Large font size for "Get schooled" */
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
 }
 
 .hero-content .subtitle-words {
-    display: flex;
-    gap: 25px;
+    display: flex; /* Makes "SMILES GRIN LAUGH" display horizontally */
+    gap: 25px; /* Space between each word */
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    justify-content: center; /* Center the words */
+    justify-content: center; /* Centers the words within their container */
 }
 
 .hero-content .register-button {
-    background-color: #9c27b0; /* Purple button color */
+    background-color: #9c27b0; /* Purple button color sampled from the image */
     color: #ffffff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
+    padding: 15px 30px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 25px; /* Highly rounded corners for the button */
     font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-decoration: none; /* Removes underline from the anchor tag */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hero-content .register-button:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
 }
 
 .learn-pros-text {
     font-size: 28px;
     font-weight: 600;
-    color: #9c27b0; /* Purple color */
-    margin-top: 100px; /* Increased margin to push it below the button area */
-    margin-bottom: 50px; /* Space between this text and the pros cards */
+    color: #9c27b0; /* Purple color for "Learn from the pros" text */
+    margin-top: 100px; /* Pushes this text further down from the button */
+    margin-bottom: 50px; /* Space between this text and the upcoming pros cards */
 }
 
-/* Pros Section Styling (Assuming it's the section immediately after the hero) */
+/* Pros Section Styling (The section containing the four circular images) */
 .pros-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    gap: 30px; /* Space between cards */
-    padding-bottom: 100px; /* Padding at the bottom of this section */
-    background-color: #0d1222; /* Ensure background matches body */
+    display: flex; /* Use flexbox to arrange pro cards horizontally */
+    justify-content: center; /* Centers the group of pro cards */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    gap: 30px; /* Space between each pro card */
+    padding: 50px 20px 100px; /* Padding around the entire pros section */
+    background-color: #0d1222; /* Ensures background matches body */
 }
 
 .pro-card {
-    display: flex;
+    display: flex; /* Use flexbox to stack image, name, and description vertically */
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers content within each card */
     text-align: center;
-    width: 220px; /* Approximate width based on image */
+    width: 220px; /* Approximate width of each card based on the image */
 }
 
 .pro-card img {
-    width: 150px; /* Circular image size */
-    height: 150px;
-    border-radius: 50%; /* Makes image circular */
-    object-fit: cover; /* Ensures image covers the area without distortion */
-    border: 3px solid #673ab7; /* Purple border around images */
+    width: 150px; /* Fixed width for the circular images */
+    height: 150px; /* Fixed height for the circular images */
+    border-radius: 50%; /* Makes the images perfectly circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #673ab7; /* Purple border around images, sampled from image */
     margin-bottom: 15px;
 }
 
@@ -161,43 +171,43 @@ nav ul li a {
 
 .pro-card p {
     font-size: 14px;
-    color: #cccccc; /* Slightly lighter text for description */
+    color: #cccccc; /* Slightly lighter text for the description */
     line-height: 1.4;
     margin: 0;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     header {
         padding: 15px 20px;
-        flex-direction: column;
+        flex-direction: column; /* Stack header items vertically */
         align-items: flex-start;
     }
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack navigation links vertically */
         align-items: flex-start;
         width: 100%;
         margin-top: 15px;
     }
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Adjust spacing for stacked links */
     }
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 40px; /* Smaller font for "Get schooled" */
     }
     .hero-content .subtitle-words {
-        flex-direction: column;
+        flex-direction: column; /* Stack subtitle words vertically */
         gap: 10px;
     }
     .learn-pros-text {
-        font-size: 22px;
+        font-size: 22px; /* Smaller font for "Learn from the pros" */
         margin-top: 50px;
     }
     .pros-section {
-        padding: 50px 20px;
+        padding: 50px 20px; /* Adjust padding for pros section */
     }
     .pro-card {
         width: 100%; /* Full width for cards on small screens */
-        max-width: 250px; /* Limit width even if full width */
+        max-width: 250px; /* Limit individual card width even if full width for better aesthetics */
     }
 }
