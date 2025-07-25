@@ -6,6 +6,11 @@
 }
 
 body {
+    background-image: url("ROBO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -31,7 +36,6 @@ nav {
 }
 
 nav img {
-    background-image: url("ROBO.jpg");
     height: 50px;
 }
 
