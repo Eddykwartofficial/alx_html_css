@@ -1,6 +1,8 @@
 # alx_html_css
 
-Headphones - Modern Landing PageWelcome to the repository for the "Headphones" landing page, a sleek and modern website template designed for a fictional audio company. 
+Headphones - Modern Landing Page
+
+Welcome to the repository for the "Headphones" landing page, a sleek and modern website template designed for a fictional audio company. 
 This project showcases a clean, professional design built entirely with HTML and CSS, focusing on a great user experience and a fully responsive layout.
 
 🌟 Features
