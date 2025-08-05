@@ -182,7 +182,7 @@ ul {
 
 /* Results Section */
 .results-section {
-    background-image: url('https://googleusercontent.com/file_content/2'); /* Reusing hero background */
+    background-image: url('./images/headphones_hero_2.jpg'); /* Reusing hero background */
     background-size: cover;
     background-position: center;
     padding: var(--section-padding);
