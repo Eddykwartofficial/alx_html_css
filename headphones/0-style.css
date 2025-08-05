@@ -106,7 +106,7 @@ ul {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('https://googleusercontent.com/file_content/2');
+    background-image: url('./images/headphones_hero_1.jpg');
     background-size: cover;
     background-position: center top;
     padding: 8rem 0;
