@@ -19,12 +19,17 @@ Footer: A comprehensive footer containing the company logo and social media link
 
 This project is built with fundamental web technologies, ensuring it is lightweight, fast, and easy to customize. HTML5: Used for the structure and semantic markup of the webpage. CSS3: Used for all styling, including modern layouts (Flexbox/Grid), custom properties, and responsive design to ensure the page looks great on all devices.
 
-🚀 How to UseTo view or edit this project on your local machine, follow these simple steps:
-Clone the repository:git clone 
+🚀 How to Use
+
+To view or edit this project on your local machine, follow these simple steps:
+Clone the repository:git clone
+
 https://github.com/your-username/headphones-project.git
 
 Navigate to the project directory:cd headphones-project
-Open the index.html file in your browser: You can do this by double-clicking the file in your file explorer or by right-clicking and selecting "Open with" your preferred browser.
+Open the index.html file in your browser: 
+
+You can do this by double-clicking the file in your file explorer or by right-clicking and selecting "Open with" your preferred browser.
 
 ✍️ Author: This project was designed and built by Edward Kwarteng Owusu. 
 
